@@ -1,0 +1,6 @@
+.section-title {
+  font-family: 'Titan One', cursive;
+  @include font(48px, 400, 1.15, 0.04em);
+  text-align: center;
+  text-transform: uppercase;
+}

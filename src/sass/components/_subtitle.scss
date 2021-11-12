@@ -1,0 +1,6 @@
+.subtitle {
+  font-family: 'Titan One', cursive;
+  @include font(26px, 400, 1.15, 0em);
+  text-align: center;
+  text-transform: uppercase;
+}
