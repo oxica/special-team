@@ -4,6 +4,7 @@
   //   font-weight: 500;
   //   font-size: 12px;
   //   letter-spacing: 0.04em;
+  margin-top: -85px;
 }
 .contacts-box {
   padding: 43px 21px 43px 20px;
@@ -46,6 +47,10 @@
   color: #000000;
   margin-bottom: 10px;
 }
+
+// .contacts-date{
+//   margin-bottom: 0px;
+// }
 .contacts-box-contacts,
 .contacts-box-info {
   font-family: DM Sans;
@@ -55,8 +60,18 @@
   color: #907e82;
   margin-bottom: 25px;
   width: 179px;
-  
+  display: block;
+
   text-decoration: none;
+}
+
+.contacts-line {
+  width: 100%;
+  height: 1px;
+  background-color: #e1e1e1;
+  margin-top: 25px;
+  margin-bottom: 25px;
+
 }
 
 .contacts-box-time {
@@ -68,11 +83,11 @@
   margin-bottom: 10px;
 }
 
-.contacts-btn-box{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
+.contacts-btn-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .contacts-button-first {
   width: 162px;
@@ -89,10 +104,10 @@
   cursor: pointer;
 }
 .contacts-button-first:hover,
-.contacts-button-first:focus{
-    background-color:#ffffff;
-    border-color: #D41443;
-    color: #D41443;
+.contacts-button-first:focus {
+  background-color: #ffffff;
+  border-color: #d41443;
+  color: #d41443;
 }
 
 .contacts-button-second {
@@ -107,22 +122,34 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
-  color: #D41443;
+  color: #d41443;
   margin-top: 10px;
 }
 
 .contacts-button-second:hover,
-.contacts-button-second:focus{
-    background-color: #D41443;
-    color: #ffffff;
-    border-color: #ffffff;
+.contacts-button-second:focus {
+  background-color: #d41443;
+  color: #ffffff;
+  border-color: #ffffff;
 }
 
-.contacts-button-icon{
-    width: 6px;
-    height: 10px;
-    fill: #000000;
-    margin-left: 8px;
-    // не могу убрать родной цвет с иконки
-    
+.contacts-button-icon {
+  width: 6px;
+  height: 10px;
+  fill: #000000;
+  margin-left: 8px;
+  // не могу убрать родной цвет с иконки
 }
+
+
+
+// утилиты
+.contacts-margin-0{
+  margin-bottom: 0px;
+}
+
+
+
+// 2  свг на кнопку 
+
+// 3 ошибка в валидатрое на 36ю строчку 
