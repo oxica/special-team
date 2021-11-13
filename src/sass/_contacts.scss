@@ -1,0 +1,128 @@
+.contacts {
+  background-color: var(--primary-bg-color);
+  //   font-family: DM Sans;
+  //   font-weight: 500;
+  //   font-size: 12px;
+  //   letter-spacing: 0.04em;
+}
+.contacts-box {
+  padding: 43px 21px 43px 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  margin-bottom: 20px;
+}
+
+.contacts-box-title {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  text-transform: uppercase;
+  width: 80px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background: #f0d1a5;
+  border-radius: 4px;
+  margin-bottom: 25px;
+}
+.contacts-box-foodtruck {
+  width: 130px;
+  height: 16px;
+  background: #c2e297;
+}
+
+.contacts-box-text {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.contacts-box-contacts,
+.contacts-box-info {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #907e82;
+  margin-bottom: 25px;
+  width: 179px;
+  
+  text-decoration: none;
+}
+
+.contacts-box-time {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  color: #ffa5ba;
+  margin-bottom: 10px;
+}
+
+.contacts-btn-box{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.contacts-button-first {
+  width: 162px;
+  height: 44px;
+  background: #d41342;
+  border-radius: 22px;
+  border: 1px solid transparent;
+  font-family: DM Sans;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: #ffffff;
+  cursor: pointer;
+}
+.contacts-button-first:hover,
+.contacts-button-first:focus{
+    background-color:#ffffff;
+    border-color: #D41443;
+    color: #D41443;
+}
+
+.contacts-button-second {
+  width: 161px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 22px;
+  border: 1px solid transparent;
+
+  font-family: DM Sans;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: #D41443;
+  margin-top: 10px;
+}
+
+.contacts-button-second:hover,
+.contacts-button-second:focus{
+    background-color: #D41443;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.contacts-button-icon{
+    width: 6px;
+    height: 10px;
+    fill: #000000;
+    margin-left: 8px;
+    // не могу убрать родной цвет с иконки
+    
+}
