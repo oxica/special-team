@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/about/milk-mob-x1.png":[["milk-mob-x1.59cfff43.png","Adfh"],"Adfh"],"./../images/about/milk-mob-x2.png":[["milk-mob-x2.7572d104.png","DPCb"],"DPCb"],"./../images/about/cow-mob-x1.png":[["cow-mob-x1.4d20334f.png","VTL4"],"VTL4"],"./../images/about/cow-mob-x2.png":[["cow-mob-x2.5896b3cd.png","wNRg"],"wNRg"],"./../images/about/cow-tab-x1.png":[["cow-tab-x1.5781ebaa.png","VcHi"],"VcHi"],"./../images/about/cow-tab-x2.png":[["cow-tab-x2.ae2c5a1d.png","ysxN"],"ysxN"],"./../images/about/milk-dek-x1.png":[["milk-dek-x1.09501f64.png","o7a6"],"o7a6"],"./../images/about/milk-dek-x2.png":[["milk-dek-x2.93dcdb2b.png","iSGd"],"iSGd"],"./../images/about/cow-dek-x1.png":[["cow-dek-x1.c57e7943.png","kHOD"],"kHOD"],"./../images/about/cow-dek-x2.png":[["cow-dek-x2.95e361c7.png","E03m"],"E03m"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/special-team/src.b5aabb76.js.map
+//# sourceMappingURL=/special-team/src.a7137370.js.map
