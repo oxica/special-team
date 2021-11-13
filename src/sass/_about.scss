@@ -1,0 +1,288 @@
+@media screen and (min-width: 320px) {
+  .about {
+    width: 100%;
+    padding-top: 125px;
+    padding-bottom: 110px;
+    background-color: var(--primary-bg-color);
+  }
+  .about__container {
+    width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+  }
+  .about__container::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 133px;
+    background-image: url('../images/about/milk-mob-x1.png');
+    position: absolute;
+    left: 0px;
+    bottom: 60px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .container::after {
+      background-image: url('../images/about/milk-mob-x2.png');
+      background-size: cover;
+    }
+  }
+  .about__txt1,
+  .about__title {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .subtitle {
+    @include font(18px, 400, 1.17, normal);
+  }
+  .section-title {
+    @include font(34px, 400, 1.15, 0.04em);
+  }
+  .about__txt1 {
+    width: 198px;
+    color: var(--secondary-title-color);
+    margin-bottom: 15px;
+  }
+  .about__title {
+    color: var(--primary-title-color);
+    margin-bottom: 26px;
+  }
+
+  .about__txt2,
+  .about__txt3 {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--secondary-text-color);
+    margin-right: 30px;
+    margin-left: 30px;
+    @include font(12px, 500, 1.58, normal);
+  }
+  .about__txt2 {
+    margin-bottom: 31px;
+  }
+  .about__txt2::before {
+    content: '';
+    display: block;
+    background-image: url('../images/about/cow-mob-x1.png');
+
+    width: 280px;
+    height: 279px;
+    margin-right: -30px;
+    margin-bottom: 46px;
+    margin-left: -30px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .about__txt2::before {
+      background-image: url('../images/about/cow-mob-x2.png');
+      background-size: cover;
+    }
+  }
+  .about__txt3 {
+    color: var(--third-text-color);
+    margin-bottom: 47px;
+  }
+  .btn700 {
+    @include font(14px, 700, 1.29, normal);
+  }
+  .about__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 176px;
+    height: 44px;
+    border-radius: 22px;
+    padding: 0;
+    border: none;
+    background: var(--btn-bg-color);
+    font-family: 'DM Sans', sans-serif;
+    color: var(--primary-title-color);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  //   .about__btn .icon-arrow {
+  //     margin-left: 14px;
+  //   }
+}
+@media screen and (min-width: 768px) {
+  .about {
+    padding-top: 130px;
+    padding-bottom: 110px;
+  }
+  .about__container {
+    width: 768px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+  .about__container::after {
+    display: none;
+  }
+
+  .subtitle {
+    @include font(26px, 400, 1.15, normal);
+  }
+  .section-title {
+    @include font(48px, 400, 1.15, 0.04em);
+  }
+  .about__txt1 {
+    width: 285px;
+    margin-bottom: 16px;
+  }
+  .about__txt2,
+  .about__txt3 {
+    // font-family: 'DM Sans';
+    width: 340px;
+    margin-right: 0;
+    margin-left: auto;
+    @include font(14px, 500, 1.93, normal);
+  }
+  .about__txt2 {
+    width: 340px;
+    margin-top: 100px;
+    margin-bottom: 28px;
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+  }
+  .about__txt2::before {
+    content: '';
+    display: block;
+    background-image: url('../images/about/cow-tab-x1.png');
+    background-repeat: no-repeat;
+    width: 340px;
+    height: 339px;
+    margin-right: 17px;
+    margin-bottom: 46px;
+    margin-left: 0;
+    position: absolute;
+    top: -40px;
+    left: -360px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .about__txt2::before {
+      background-image: url('../images/about/cow-tab-x2.png');
+      background-size: cover;
+    }
+  }
+  .about__txt3 {
+    margin-bottom: 62px;
+  }
+  .btn700 {
+    @include font(16px, 700, 1.31, normal);
+  }
+  .about__btn {
+    margin-right: 160px;
+    margin-left: auto;
+  }
+  //   .about__btn .icon-arrow {
+  //     margin-left: 14px;
+  //   }
+}
+@media screen and (min-width: 1280px) {
+  .about {
+    padding-top: 125px;
+    padding-bottom: 110px;
+  }
+  .about__container {
+    width: 1280px;
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+  .about__container::after {
+    content: '';
+    display: block;
+    min-width: 100%;
+    height: 534px;
+    background-image: url('../images/about/milk-dek-x1.png');
+    position: absolute;
+    left: 0px;
+    bottom: -176px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .container::after {
+      background-image: url('../images/about/milk-dek-x2.png');
+      background-size: cover;
+    }
+  }
+  .subtitle {
+    @include font(30px, 400, 1.13, 0.04em);
+  }
+  .section-title {
+    @include font(58px, 400, 1.14, 0.06em);
+  }
+  .about__txt1 {
+    width: 351px;
+    margin-bottom: 15px;
+  }
+
+  .about__txt2,
+  .about__txt3 {
+    width: 463px;
+    margin-right: 0;
+    margin-left: auto;
+    @include font(14px, 500, 1.93, 0.04em);
+  }
+  .about__txt2 {
+    margin-top: 106px;
+    margin-bottom: 28px;
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    @include font(16px, 500, 1.75, 0.04em);
+  }
+  .about__txt2::before {
+    content: '';
+    display: block;
+    background-image: url('../images/about/cow-dek-x1.png');
+    background-repeat: no-repeat;
+    width: 516px;
+    height: 516px;
+    margin-right: 47px;
+    margin-bottom: 46px;
+    margin-left: 0;
+    position: absolute;
+    top: -55px;
+    left: -585px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .about__txt2::before {
+      background-image: url('../images/about/cow-dek-x2.png');
+      background-size: cover;
+    }
+  }
+  .about__txt3 {
+    margin-bottom: 62px;
+    position: relative;
+    z-index: 1;
+  }
+  .btn700 {
+    @include font(14px, 700, 1.29, normal);
+  }
+  .about__btn {
+    margin-right: 288px;
+    margin-left: auto;
+  }
+  //   .about__btn .icon-arrow {
+  //     margin-left: 14px;
+  //   }
+}
