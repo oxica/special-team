@@ -81,7 +81,7 @@
   }
 }
 
-.contacts__title {
+.contacts__pre-titile {
   font-family: DM Sans;
   font-weight: 500;
   font-size: 12px;
@@ -115,7 +115,7 @@
   }
 }
 
-.contacts__sub-title,
+.contacts__title,
 .contacts__date {
   font-family: DM Sans;
   font-weight: 500;
@@ -210,7 +210,7 @@
 .contacts__button-first {
   width: 162px;
   height: 44px;
-  background: #d41342;
+  background: var(--primary-title-color);
   border-radius: 22px;
   border: 1px solid transparent;
   font-family: DM Sans;
@@ -229,9 +229,9 @@
 }
 .contacts__button-first:hover,
 .contacts__button-first:focus {
-  background-color: var(--btn-bg-color);
-  border-color: var(--primary-title-color);
-  color: var(--primary-title-color);
+  background-color: var(--primary-title-color);
+  
+  color: #ffffff;
 }
 
 .contacts__button-second {
@@ -247,6 +247,7 @@
   line-height: 1.31;
   color: var(--primary-title-color);
   margin-top: 10px;
+  cursor: pointer;
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-top: 0px;
     margin-left: 15px;
@@ -261,9 +262,9 @@
 
 .contacts__button-second:hover,
 .contacts__button-second:focus {
-  background-color: var(--primary-title-color);
-  color: var(--btn-bg-color);
-  border-color: var(--btn-bg-color);
+  background-color: #ECEBEB;
+  color: var(--primary-title-color);
+  
 }
 
 .contacts__button-icon {
