@@ -5,6 +5,20 @@
     padding-bottom: 0;
     background-color: var(--primary-bg-color);
   }
+  .about::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 133px;
+    background-image: url('../images/about/milk-mob-x1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+
+    left: 0px;
+    bottom: -50px;
+    position: absolute;
+  }
   .about__container,
   .container {
     width: 320px;
@@ -14,21 +28,25 @@
     margin-left: auto;
     position: relative;
   }
-  .about__container::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 133px;
-    background-image: url('../images/about/milk-mob-x1.png');
-    position: absolute;
-    left: 0px;
-    bottom: 56px;
-  }
+  // .about__container::after {
+  //   content: '';
+  //   display: block;
+  //   width: 100%;
+  //   height: 133px;
+  //   background-image: url('../images/about/milk-mob-x1.png');
+  //   background-size: cover;
+  //   background-repeat: no-repeat;
+  //   position: absolute;
+
+  //   left: 0px;
+  //   bottom: -50px;
+  //   position: absolute;
+  // }
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .container::after {
+    .about::after {
       background-image: url('../images/about/milk-mob-x2.png');
       background-size: cover;
     }
@@ -126,6 +144,17 @@
     margin-bottom: 17px;
   }
 }
+@media screen and (min-width: 480px) {
+  .about {
+    width: 100%;
+    padding-top: 125px;
+    padding-bottom: 110px;
+    background-color: #fff5f6;
+  }
+  .about::after {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) {
   .about {
     padding-top: 130px;
@@ -136,9 +165,9 @@
     padding-left: 34px;
     padding-right: 34px;
   }
-  .about__container::after {
-    display: none;
-  }
+  // .about::after {
+  //   display: none;
+  // }
 
   .subtitle {
     @include font(26px, 400, 1.15, normal);
@@ -216,7 +245,7 @@
     padding-left: 115px;
     padding-right: 115px;
   }
-  .about__container::after {
+  .about::after {
     content: '';
     display: block;
     min-width: 100%;
@@ -230,7 +259,7 @@
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .container::after {
+    .about::after {
       background-image: url('../images/about/milk-dek-x2.png');
       background-size: cover;
     }
