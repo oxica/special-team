@@ -5,5 +5,12 @@
             <path fill="none" stroke="#d41443" style="stroke:var(--color1, #d41443)" stroke-linejoin="round"
                 stroke-linecap="round" stroke-width="6.4" d="M5.172 3.2 19.341 16 5.172 28.8" />
         </symbol>
+        <symbol id="icon-close" viewBox="0 0 32 32">
+
+            d="M32 16c0 8.837-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0s16 7.163 16 16z" />
+
+            <path style="fill:var(--color2, #000)"
+                d="M22.4 10.782 21.218 9.6l-4.685 4.685L11.848 9.6l-1.182 1.182 4.685 4.685-4.685 4.685 1.182 1.182 4.685-4.685 4.685 4.685 1.182-1.182-4.685-4.685 4.685-4.685z" />
+        </symbol>
     </defs>
 </svg>
