@@ -5,16 +5,68 @@
   //   font-size: 12px;
   //   letter-spacing: 0.04em;
   margin-top: -85px;
+  padding-bottom: 113px;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-top: -78px;
+    padding-bottom: 158px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: -102px;
+    padding-bottom: 165px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url(../images/contacts/fon-dek-x1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
-.contacts-box {
+
+.contacts__box {
   padding: 43px 21px 43px 20px;
   background-color: #ffffff;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 220px;
+  height: 427px;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding: 50px 32px 50px 31px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 220px;
+    height: 544px;
+    margin-bottom: 81px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 51px 44px 62px 43px;
+    width: 330px;
+    height: 572px;
+    margin-bottom: 86px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+.contacts__box:not(:last-child) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-right: 20px;
+    // почему у последнего отсуп??
+  }
+  @media screen and (min-width: 1280px) {
+    margin-right: 31px;
+    // почему у последнего отсуп??
+  }
 }
 
-.contacts-box-title {
+.contacts__title {
   font-family: DM Sans;
   font-weight: 500;
   font-size: 12px;
@@ -27,69 +79,122 @@
   justify-content: center;
   text-align: center;
   letter-spacing: 0.04em;
-  color: #ffffff;
-  background: #f0d1a5;
+  color: var(--primary-text-color);
+  background: var(--third-bg-color);
   border-radius: 4px;
   margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.88;
+    width: 73px;
+    height: 28px;
+  }
 }
-.contacts-box-foodtruck {
+.contacts__foodtruck {
   width: 130px;
   height: 16px;
-  background: #c2e297;
+  background: var(--fourth-bg-color);
+  @media screen and (min-width: 768px) {
+    width: 138px;
+    height: 28px;
+  }
 }
 
-.contacts-box-text {
+.contacts__sub-title,
+.contacts__date {
   font-family: DM Sans;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.83;
   letter-spacing: 0.04em;
-  color: #000000;
+  color: var(--secondary-text-color);
   margin-bottom: 10px;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    font-size: 14px;
+    line-height: 1.86;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.88;
+  }
 }
 
-// .contacts-date{
-//   margin-bottom: 0px;
-// }
-.contacts-box-contacts,
-.contacts-box-info {
+.contacts__aft-title,
+.contacts__connection {
   font-family: DM Sans;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
-  color: #907e82;
+  color: var(--third-text-color);
   margin-bottom: 25px;
   width: 179px;
   display: block;
-
   text-decoration: none;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    font-size: 14px;
+    line-height: 1.64;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.04em;
+  }
+}
+.contacts__connection {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    font-size: 14px;
+    line-height: 1.86;
+  }
+  @media screen and (min-width: 1280px) {
+    letter-spacing: 0px;
+  }
 }
 
-.contacts-line {
+.contacts__line {
   width: 100%;
   height: 1px;
   background-color: #e1e1e1;
   margin-top: 25px;
   margin-bottom: 25px;
-
+}
+.contacts__list {
+  list-style: none;
 }
 
-.contacts-box-time {
+.contacts__time {
   font-family: DM Sans;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.83;
-  color: #ffa5ba;
+  color: var(--secondary-title-color);
   margin-bottom: 10px;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    font-size: 14px;
+    line-height: 1.86;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.88;
+  }
 }
 
-.contacts-btn-box {
+.contacts__addr {
+  font-style: normal;
+}
+
+.contacts__btn-box {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    flex-direction: unset;
+  }
+  @media screen and (min-width: 1280px) {
+    flex-direction: unset;
+  }
 }
-.contacts-button-first {
+.contacts__button-first {
   width: 162px;
   height: 44px;
   background: #d41342;
@@ -102,54 +207,68 @@
   line-height: 1.31;
   color: #ffffff;
   cursor: pointer;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 191.45px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 198px;
+  }
 }
-.contacts-button-first:hover,
-.contacts-button-first:focus {
-  background-color: #ffffff;
-  border-color: #d41443;
-  color: #d41443;
+.contacts__button-first:hover,
+.contacts__button-first:focus {
+  background-color: var(--btn-bg-color);
+  border-color: var(--primary-title-color);
+  color: var(--primary-title-color);
 }
 
-.contacts-button-second {
+.contacts__button-second {
   width: 161px;
   height: 44px;
-  background: #ffffff;
+  background: var(--btn-bg-color);
   border-radius: 22px;
   border: 1px solid transparent;
 
   font-family: DM Sans;
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
-  color: #d41443;
+  color: var(--primary-title-color);
   margin-top: 10px;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-top: 0px;
+    margin-left: 15px;
+    width: 174.05px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 0px;
+    margin-left: 15px;
+    width: 180px;
+  }
 }
 
-.contacts-button-second:hover,
-.contacts-button-second:focus {
-  background-color: #d41443;
-  color: #ffffff;
-  border-color: #ffffff;
+.contacts__button-second:hover,
+.contacts__button-second:focus {
+  background-color: var(--primary-title-color);
+  color: var(--btn-bg-color);
+  border-color: var(--btn-bg-color);
 }
 
-.contacts-button-icon {
+.contacts__button-icon {
   width: 6px;
   height: 10px;
-  fill: #000000;
   margin-left: 8px;
-  // не могу убрать родной цвет с иконки
 }
 
-
-
 // утилиты
-.contacts-margin-0{
+.contacts__margin-0 {
   margin-bottom: 0px;
 }
 
+// !!!ОШИБКИ!!!!!
 
+//  1 !! ошибка в валидатрое на 36ю строчку!!!!!
 
-// 2  свг на кнопку 
+//  2  !! .contacts__box:not(:last-child)
+// почему остается правый отступ??!!!!!!!!!!!
 
-// 3 ошибка в валидатрое на 36ю строчку 
+// 3!!! проблема с задним розовым фоном, за контейнера
