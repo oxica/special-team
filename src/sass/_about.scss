@@ -303,6 +303,8 @@
   .about__btn {
     margin-right: 288px;
     margin-left: auto;
+    position: relative;
+    z-index: 10;
   }
 }
 /* МОДАЛКА */
@@ -331,7 +333,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 90%;
+  // width: 90%;
   height: auto;
   padding-right: 20px;
   padding-bottom: 20px;
@@ -366,6 +368,23 @@
 @media screen and (min-width: 320px) {
   .about-modal {
     overflow: scroll;
+    width: 320px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .about-modal {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-modal {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-modal {
+    width: 800px;
   }
 }
 
@@ -376,7 +395,9 @@
   border: none;
   background-color: #ffb8ca;
 }
-
+.modal-list {
+  list-style-type: none;
+}
 .modal-item + .modal-item {
   margin-top: 50px;
 }
@@ -391,6 +412,7 @@
 
 .modal-txt::before {
   content: '';
+  background-image: url('../images/about/clover.png');
   display: block;
   width: 40px;
   height: 40px;
