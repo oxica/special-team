@@ -4,6 +4,7 @@
     padding-top: 125px;
     padding-bottom: 0;
     background-color: var(--primary-bg-color);
+    position: relative;
   }
   .about::after {
     content: '';
@@ -16,7 +17,7 @@
     position: absolute;
 
     left: 0px;
-    bottom: -2120px;
+    bottom: 50px;
     position: absolute;
   }
   .about__container,
@@ -253,7 +254,7 @@
     background-image: url('../images/about/milk-dek-x1.png');
     position: absolute;
     left: 2px;
-    bottom: -1120px;
+    bottom: -100px;
   }
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
