@@ -1,0 +1,79 @@
+.section__customer-reviews
+{
+    padding-top: 123px;
+    padding-bottom: 234px;
+}
+.customer-reviews__img
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+.customer-reviews__coment-container{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    max-width: 926px;
+    background-color:#FAFAFA;
+    padding: 47px 89px 39px 87px;
+}
+.customer-reviews__coment
+{
+    
+    width: 750px;
+    font-family: DM+Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #000000;
+    background-image: repeating-linear-gradient(0deg,#e1e1e1 0 1px, transparent 1px 31px);
+    z-index: 1;    
+}
+.customer-reviews__coment::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    margin-top: -15px;
+    margin-left: -34px;
+    width: 54px;
+    height: 40px;
+    background-image: url(../images/customer-reviews/icon-kavicky.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.customer-reviews__name{
+    margin-top: 30px;
+    position: relative;
+    font-family: DM+Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.86;
+    text-align: center;
+
+    color: #000000;
+
+    &::before{
+        content: '';      
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -15px;
+        width: 32px;
+        height: 4px;
+        background-image: url(../images/customer-reviews/group8.png);
+    }
+}
+.customers-reviews__icon{
+    display: flex;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 72px;
+    justify-content: space-between;
+}
