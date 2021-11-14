@@ -10,24 +10,39 @@
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-top: -78px;
     padding-bottom: 158px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+
   }
   @media screen and (min-width: 1280px) {
     margin-top: -102px;
     padding-bottom: 165px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+
     background-image: url(../images/contacts/fon-dek-x1.png);
     background-size: contain;
     background-repeat: no-repeat;
   }
 }
 
+.contacts__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: unset;
+  }
+  @media screen and (min-width: 1280px){
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: unset;
+  }
+}
 .contacts__box {
   padding: 43px 21px 43px 20px;
   background-color: #ffffff;
@@ -58,11 +73,11 @@
 .contacts__box:not(:last-child) {
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-right: 20px;
-    // почему у последнего отсуп??
+    
   }
   @media screen and (min-width: 1280px) {
     margin-right: 31px;
-    // почему у последнего отсуп??
+    
   }
 }
 
@@ -157,9 +172,7 @@
   margin-top: 25px;
   margin-bottom: 25px;
 }
-.contacts__list {
-  list-style: none;
-}
+
 
 .contacts__time {
   font-family: DM Sans;
@@ -264,11 +277,13 @@
   margin-bottom: 0px;
 }
 
+.list {
+  list-style: none;
+}
+
 // !!!ОШИБКИ!!!!!
 
 //  1 !! ошибка в валидатрое на 36ю строчку!!!!!
 
-//  2  !! .contacts__box:not(:last-child)
-// почему остается правый отступ??!!!!!!!!!!!
 
-// 3!!! проблема с задним розовым фоном, за контейнера
+// 2 !!! проблема с задним розовым фоном, за контейнера
