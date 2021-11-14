@@ -4,16 +4,13 @@
   //   font-weight: 500;
   //   font-size: 12px;
   //   letter-spacing: 0.04em;
-  margin-top: -85px;
+
   padding-bottom: 113px;
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
-    margin-top: -78px;
     padding-bottom: 158px;
-
   }
   @media screen and (min-width: 1280px) {
-    margin-top: -102px;
     padding-bottom: 165px;
 
     background-image: url(../images/contacts/fon-dek-x1.png);
@@ -35,8 +32,8 @@
     flex-wrap: wrap;
     flex-direction: unset;
   }
-  @media screen and (min-width: 1280px){
-     display: flex;
+  @media screen and (min-width: 1280px) {
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -48,6 +45,7 @@
   background-color: #ffffff;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
+  // margin-top: -85px;
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -55,29 +53,32 @@
   height: 427px;
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     padding: 50px 32px 50px 31px;
+    margin-top: -78px;
     margin-left: 0px;
     margin-right: 0px;
+    margin-bottom: 81px;
     width: 220px;
     height: 544px;
-    margin-bottom: 81px;
   }
   @media screen and (min-width: 1280px) {
     padding: 51px 44px 62px 43px;
     width: 330px;
     height: 572px;
+    margin-top: -102px;
     margin-bottom: 86px;
     margin-left: 0px;
     margin-right: 0px;
   }
 }
+.contacts__box:first-child{
+  margin-top: -85px;
+}
 .contacts__box:not(:last-child) {
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-right: 20px;
-    
   }
   @media screen and (min-width: 1280px) {
-    margin-right: 31px;
-    
+    margin-right: 30px;
   }
 }
 
@@ -173,7 +174,6 @@
   margin-bottom: 25px;
 }
 
-
 .contacts__time {
   font-family: DM Sans;
   font-weight: 500;
@@ -230,7 +230,7 @@
 .contacts__button-first:hover,
 .contacts__button-first:focus {
   background-color: var(--primary-title-color);
-  
+
   color: #ffffff;
 }
 
@@ -262,9 +262,8 @@
 
 .contacts__button-second:hover,
 .contacts__button-second:focus {
-  background-color: #ECEBEB;
+  background-color: #ecebeb;
   color: var(--primary-title-color);
-  
 }
 
 .contacts__button-icon {
@@ -285,6 +284,5 @@
 // !!!ОШИБКИ!!!!!
 
 //  1 !! ошибка в валидатрое на 36ю строчку!!!!!
-
 
 // 2 !!! проблема с задним розовым фоном, за контейнера
