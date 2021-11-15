@@ -55,7 +55,7 @@
 .footer-right {
   text-align: right;
 }
-.footer-cocial_list {
+.footer-social_list {
   display: flex;
   margin-bottom: 46px;
   justify-content: right;
@@ -63,7 +63,7 @@
     margin-bottom: 50px;
   }
 }
-.footer-cocial_item:not(:last-child) {
+.footer-social_item:not(:last-child) {
   margin-right: 28px;
   @media screen and(min-width: 768px) {
     margin-right: 30px;
@@ -73,7 +73,7 @@
   }
 }
 
-.footer-cocial_icon {
+.footer-social_icon {
   fill: #fea5bb;
   width: 32px;
   height: 32px;
@@ -83,8 +83,8 @@
   }
 }
 
-.footer-cocial_item:hover .footer-cocial_icon,
-.footer-cocial_item:focus .footer-cocial_icon {
+.footer-social_item:hover .footer-social_icon,
+.footer-social_item:focus .footer-social_icon {
   fill: var(--primary-title-color);
 }
 
