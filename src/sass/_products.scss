@@ -132,6 +132,7 @@
     @media screen and (min-width: 1280px) {
       height: 335px;
       background-image: url(../images/products/products1-dek-x1.png);
+      transform: translateY(-65%);
     }
   }
 }
@@ -143,6 +144,18 @@
   .item-pink::before {
     background-image: url(../images/products/products1-mob-x2.png);
     background-size: 249px 252px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    .item-pink::before {
+      background-image: url(../images/products/products1-tab-x2.png);
+      background-size: 220px 226px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    .item-pink::before {
+      background-image: url(../images/products/products1-dek-x2.png);
+      background-size: 335px 335px;
+    }
   }
 }
 
@@ -197,6 +210,7 @@
     @media screen and (min-width: 1280px) {
       height: 335px;
       background-image: url(../images/products/products2-dek-x1.png);
+      transform: translateY(-65%);
     }
   }
 }
@@ -208,6 +222,18 @@
   .item-yellow::before {
     background-image: url(../images/products/products2-mob-x2.png);
     background-size: 249px 252px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    .item-yellow::before {
+      background-image: url(../images/products/products2-tab-x2.png);
+      background-size: 220px 226px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    .item-yellow::before {
+      background-image: url(../images/products/products2-dek-x2.png);
+      background-size: 335px 335px;
+    }
   }
 }
 .item-green {
@@ -257,6 +283,7 @@
     @media screen and (min-width: 1280px) {
       height: 335px;
       background-image: url(../images/products/products3-dek-x1.png);
+      transform: translateY(-65%);
     }
   }
 }
@@ -268,6 +295,18 @@
   .item-green::before {
     background-image: url(../images/products/products3-mob-x2.png);
     background-size: 249px 252px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    .item-green::before {
+      background-image: url(../images/products/products3-tab-x2.png);
+      background-size: 220px 226px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    .item-green::before {
+      background-image: url(../images/products/products3-dek-x2.png);
+      background-size: 335px 335px;
+    }
   }
 }
 .item__title {
@@ -326,6 +365,7 @@
     padding-left: 10px;
     padding-right: 10px;
     line-height: 1.76;
+    letter-spacing: 0.05em;
   }
 
   @media screen and (min-width: 1280px) {
@@ -336,6 +376,13 @@
     padding-right: 44px;
     font-size: 16px;
     line-height: 1.76;
+    letter-spacing: 0.04em;
+  }
+}
+
+.discription--mob {
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 
@@ -351,4 +398,10 @@
   color: var(--primary-title-color);
   background-color: #ffffff;
   background-image: url(../images/products/arrow-right.png);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border: 1px solid #d41443;
+  }
 }
