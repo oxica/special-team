@@ -376,6 +376,7 @@
     padding-right: 44px;
     font-size: 16px;
     line-height: 1.76;
+    letter-spacing: 0.04em;
   }
 }
 
@@ -401,6 +402,6 @@
 
   &:hover,
   &:focus {
-    border: 1px solid #0000ff;
+    border: 1px solid #d41443;
   }
 }
