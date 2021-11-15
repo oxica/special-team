@@ -2,15 +2,40 @@
     <div class="header__wrapper container">
         <div class="header__nav">
             <img class="header__logo" src="./images/hero-header/logo.png" alt="">
+            <button class="header__open-menu js-open-menu" type="button" aria-expanded="false"
+                aria-controls="mobile-menu"><img src="./images/hero-header/Burger.svg" width="20px" height="12px"
+                    alt="">
+            </button>
+        </div>
+        <div>
+            <img class="elips-img" src="./images/hero-header/ellipse-mob-x1.png" alt="">
+            <img class="ice-img" src="./images/hero-header/ice-mob-x1.png" alt="">
         </div>
         <div class="header__wrap-title">
             <h1 class="header__title">ice cream<br>
                 made with <br>
                 <span class="header__title-span">passion</span>
             </h1>
-            <a href="">
-                <button class="header__btn1 btn400" type="button">Products</button></a>
-            <a href=""><button class="header__btn2 btn400" type="button">How it’s made?</button></a>
+            <a class="header__btn1 btn400 link" href="">Products</a>
+            <a class="header__btn2 btn400 link" href="">How it’s made?</a>
+        </div>
+    </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <div class="menu-container__wraper1">
+            <button type="button" class="close-menu js-close-menu">
+                <svg width="14" height="14" aria-label="переключатель мобильного меню">
+                    <use class="close-icon-menu" href="./images/hero-header/symbol-defs.svg#icon-close"></use>
+                </svg></button>
+            <button class="button-menu" type="button">Buy now</button>
+        </div>
+        <div class="menu-container__wraper2">
+            <ul class="mobil-list">
+                <li class="mobil-list__element list"><a class="mobil__link link" href="">Home</a></li>
+                <li class="mobil-list__element list"><a class="mobil__link link" href="">About us</a></li>
+                <li class="mobil-list__element list"><a class="mobil__link link" href="">How it’s made?</a></li>
+                <li class="mobil-list__element list"><a class="mobil__link link" href="">Our products</a></li>
+                <li class="mobil-list__element list"><a class="mobil__link link" href="">Contact</a></li>
+            </ul>
         </div>
     </div>
 </header>
