@@ -8,16 +8,16 @@
     justify-content: space-between;
   }
 }
-.footer-left {
-  @media screen and(min-width: 1280px) {
-    margin-left: 114px;
-  }
-}
-.footer-right {
-  @media screen and(min-width: 1280px) {
-    margin-right: 116px;
-  }
-}
+// .footer-left {
+//   @media screen and(min-width: 1280px) {
+//     margin-left: 114px;
+//   }
+// }
+// .footer-right {
+//   @media screen and(min-width: 1280px) {
+//     margin-right: 116px;
+//   }
+// }
 
 .footer-subtitle {
   @include font(18px, 400, 1.17, normal);
@@ -40,6 +40,7 @@
   color: var(--primary-title-color);
   text-align: start;
   margin-bottom: 80px;
+  // width: 340px;
   @media screen and(min-width: 768px) {
     @include font(48px, 400, 1.15, 0.06em);
     width: 340px;
