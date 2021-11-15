@@ -2,7 +2,6 @@
   .about {
     width: 100%;
     padding-top: 125px;
-    padding-bottom: 0;
     background-color: var(--primary-bg-color);
     background-image: url('../images/about/milk-mob-x1.png');
     background-size: contain;
@@ -106,13 +105,11 @@
     color: var(--primary-title-color);
     margin-right: auto;
     margin-left: auto;
-    transition: transform 500ms;
   }
   .about__btn:hover,
   .about__btn:focus {
     background-color: #ecebeb;
     cursor: pointer;
-    transform: scale(1.5);
   }
   .about__btn .icon-arrow {
     margin-left: 15px;
@@ -124,7 +121,6 @@
   .about {
     width: 100%;
     padding-top: 125px;
-    padding-bottom: 110px;
     background-color: #fff5f6;
   }
 }
