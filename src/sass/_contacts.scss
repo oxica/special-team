@@ -117,7 +117,7 @@
 }
 
 .foodtruck-hidden {
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 768px) {
      white-space: pre;
   }
  
@@ -237,7 +237,7 @@
   &:hover,
   &:focus {
     background-color: #ecebeb;
-    border-color: var(--primary-title-color);
+    
     color: var(--primary-title-color);
   }
 }
@@ -287,8 +287,8 @@
   list-style: none;
 }
 
-// !!!ОШИБКИ!!!!!
 
-//  1 !! ошибка в валидатрое на 36ю строчку!!!!!
 
-// 2 !!! проблема с задним розовым фоном, за контейнера
+
+
+
