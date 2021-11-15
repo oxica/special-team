@@ -1,0 +1,32 @@
+/* GALLERY */
+
+.gallery {
+  padding-top: 0;
+  padding-bottom: 0;
+
+  background: linear-gradient(
+    var(--primary-bg-color) 40%,
+    var(--primary-bg-color) 40%,
+    transparent 0
+  );
+}
+
+.container-gallery {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.set-img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  @media screen and (min-width: 320px) {
+    max-width: 320px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+  }
+}
