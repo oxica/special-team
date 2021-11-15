@@ -1,0 +1,77 @@
+.header {
+  background-color: var(--secondary-bg-color);
+}
+
+.header__wrapper {
+  padding-top: 6px;
+  padding-bottom: 160px;
+  background-image: url(../images/hero-header/ice-mob-x1.png),
+    url(../images/hero-header/ellipse-mob-x1.png);
+  background-repeat: no-repeat;
+  background-size: auto, 347px;
+  background-position-x: 117px, 36px;
+  background-position-y: 100%, 50%;
+}
+
+.header__nav {
+  margin-bottom: 137px;
+}
+.header__logo {
+  width: 199px;
+  height: 50px;
+}
+
+.header__title {
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--btn-bg-color);
+  margin-bottom: 19px;
+}
+.header__title-span {
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 96.5%;
+  text-transform: uppercase;
+  color: var(--primary-title-color);
+}
+.header__btn1 {
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  width: 62.4px;
+  height: 24px;
+  left: 20px;
+  top: 318px;
+  background-color: var(--primary-title-color);
+  color: var(--btn-bg-color);
+  border-radius: 20px;
+  &:hover,
+  &:focus {
+    background-color: var(--btn-bg-color);
+    color: var(--primary-title-color);
+  }
+}
+.header__btn2 {
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  width: 82.8px;
+  height: 24px;
+  left: 90.4px;
+  top: 318px;
+  background-color: var(--btn-bg-color);
+  color: var(--primary-title-color);
+  border-radius: 20px;
+  &:hover,
+  &:focus {
+    background-color: var(--primary-title-color);
+    color: var(--btn-bg-color);
+  }
+}
