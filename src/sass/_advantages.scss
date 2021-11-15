@@ -7,7 +7,7 @@
     padding-bottom: 140px;
   }
   @media screen and (min-width: 1280px) {
-    padding-top: 39px;
+    padding-top: 79px;
     padding-bottom: 139px;
   }
 }
@@ -19,8 +19,8 @@
     margin-left: 34px;
   }
   @media screen and (min-width: 1280px) {
-    margin-left: 114px;
-    margin-right: 116px;
+    // margin-left: 114px;
+    // margin-right: 116px;
   }
 }
 
@@ -50,7 +50,7 @@
 .advantages__pre-title {
   font-family: Titan One;
   @include font(36px, 400, 41px, 0.04em);
-  text-transform: uppercase;
+  // text-transform: uppercase;
   color: var(--primary-title-color);
   margin-bottom: 18px;
   @media screen and (min-width: 768px) {
