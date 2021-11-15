@@ -70,7 +70,7 @@
     margin-right: 0px;
   }
 }
-.contacts__box:first-child{
+.contacts__box:first-child {
   margin-top: -85px;
 }
 .contacts__box:not(:last-child) {
@@ -116,6 +116,13 @@
   }
 }
 
+.foodtruck-hidden {
+  @media screen and (min-width: 1280px) {
+     white-space: pre;
+  }
+ 
+}
+
 .contacts__title,
 .contacts__date {
   font-family: DM Sans;
@@ -154,6 +161,7 @@
     font-size: 16px;
     line-height: 1.8;
     letter-spacing: 0.04em;
+    width: 244px;
   }
 }
 .contacts__connection {
@@ -226,14 +234,13 @@
   @media screen and (min-width: 1280px) {
     width: 198px;
   }
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+    border-color: var(--primary-title-color);
+    color: var(--primary-title-color);
+  }
 }
-.contacts__button-first:hover,
-.contacts__button-first:focus {
-  background-color: var(--primary-title-color);
-
-  color: #ffffff;
-}
-
 .contacts__button-second {
   width: 161px;
   height: 44px;
@@ -258,12 +265,11 @@
     margin-left: 15px;
     width: 180px;
   }
-}
-
-.contacts__button-second:hover,
-.contacts__button-second:focus {
-  background-color: #ecebeb;
-  color: var(--primary-title-color);
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+    color: var(--primary-title-color);
+  }
 }
 
 .contacts__button-icon {
