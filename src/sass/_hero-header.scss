@@ -49,6 +49,13 @@
     left: 46px;
   }
 }
+.header__logo:hover,
+.header__logo:focus {
+  animation-name: bounceIn;
+  animation-duration: 1200ms;
+  animation-timing-function: linear;
+  animation-delay: 600ms;
+}
 
 .header__open-menu {
   background-color: inherit;
@@ -73,6 +80,14 @@
   color: var(--btn-bg-color);
 }
 .current {
+  color: var(--primary-title-color);
+}
+.header__link:hover,
+.header__link:focus {
+  animation-name: rubberBand;
+  animation-duration: 1200ms;
+  animation-timing-function: linear;
+  animation-delay: 100ms;
   color: var(--primary-title-color);
 }
 
@@ -147,6 +162,12 @@
     top: 108px;
     left: 594px;
   }
+}
+.ice-img:hover {
+  animation-name: wobble;
+  animation-duration: 1600ms;
+  animation-timing-function: linear;
+  animation-delay: 200ms;
 }
 
 .elips-img {
