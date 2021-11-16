@@ -422,13 +422,15 @@
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: red;
-  // color: white;
+  background-color: var(--third-text-color);
+  color: var(--btn-bg-color);
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
   font-size: 18px; /* Increase font size */
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 #myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+  background-color: var(--primary-title-color); /* Add a dark-grey background on hover */
+  transform: scale(1.2);
 }
