@@ -118,9 +118,8 @@
 
 .foodtruck-hidden {
   @media screen and (min-width: 768px) {
-     white-space: pre;
+    white-space: pre;
   }
- 
 }
 
 .contacts__title,
@@ -236,9 +235,7 @@
   }
   &:hover,
   &:focus {
-    background-color: #ecebeb;
-    
-    color: var(--primary-title-color);
+    background-color: #c7133e;
   }
 }
 .contacts__button-second {
@@ -287,8 +284,4 @@
   list-style: none;
 }
 
-
-
-
-
-
+//  1 !! ошибка в валидатрое на 36ю строчку!!!!!
