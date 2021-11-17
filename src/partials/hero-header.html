@@ -27,15 +27,22 @@
                 made with <br>
                 <span class="header__title-span">passion</span>
             </h1>
-            <a class="header__btn1 btn400 link" href="#products">Products</a>
-            <a class="header__btn2 btn400 link" href="#about">How it’s made?</a>
+            <ul class="header__button-list">
+                <a class="header__btn1 btn400 link" href="#products">Products</a>
+                <a class="header__btn2 btn400 link" href="#about">How it’s made?</a>
+            </ul>
         </div>
         <div class="header__wrapper2">
             <img class="slider-img" srcset="./images/hero-header/slider-tab-x1.png 1x,./images/hero-header/slider-tab-x2.png 2x
                 " src="./images/hero-header/slider-dek-x2.png" alt="" width="124" height="126">
-            <p class="header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et
-            </p>
+            <div>
+                <p class="header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et
+                </p>
+                <a class="right-button" href=""><svg width="9" height="9">
+                        <use class="svg-buuton" href="./images/hero-header/symbol-defs.svg#icon-arrow-right2"></use>
+                    </svg></a>
+            </div>
             <img class="girl-tab" srcset="./images/hero-header/girl-tab-x1.png 1x,./images/hero-header/girl-tab-x2.png 2x
                 " src="./images/hero-header/girl-dek-x2.png" alt="Девушка" width="168" height="133">
             <img class="figure-tab1" srcset="./images/hero-header/Group1-tab-1x.png 1x,./images/hero-header/Group1-tab-2x.png 2x
@@ -44,7 +51,7 @@
             " src="./images/hero-header/Group2-dek-2x.png" alt="">
         </div>
     </div>
-    <div class="menu-container js-menu-container" id="mobile-menu">
+    <div class="menu-container js-menu-container " id="mobile-menu">
         <div class="menu-container__wraper1">
             <button type="button" class="close-menu js-close-menu">
                 <svg width="14" height="14" aria-label="переключатель мобильного меню">
@@ -56,8 +63,10 @@
             <ul class="mobil-list">
                 <li class="mobil-list__element list"><a class="mobil__link link currents" href="./">Home</a></li>
                 <li class="mobil-list__element list"><a class="mobil__link link" href="#about">About us</a></li>
-                <li class="mobil-list__element list"><a class="mobil__link link" href="#about">How it’s made?</a></li>
-                <li class="mobil-list__element list"><a class="mobil__link link" href="#products">Our products</a></li>
+                <li class="mobil-list__element list"><a class="mobil__link link" href="#about">How it’s made?</a>
+                </li>
+                <li class="mobil-list__element list"><a class="mobil__link link" href="#products">Our products</a>
+                </li>
                 <li class="mobil-list__element list"><a class="mobil__link link" href="#contact">Contact</a></li>
             </ul>
         </div>
