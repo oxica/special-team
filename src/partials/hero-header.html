@@ -3,8 +3,7 @@
 
         <div class="header__nav">
             <img class="header__logo animate__animated animate__bounceIn" src="./images/hero-header/logo.png" alt="">
-            <button class="header__open-menu js-open-menu" type="button" aria-expanded="false"
-                aria-controls="mobile-menu">
+            <button class="header__open-menu " type="button" data-modal-opens>
                 <img src="./images/hero-header/Burger.svg" width="20" height="12" alt="">
             </button>
             <ul class="header__list">
@@ -14,7 +13,7 @@
                 <li class="header__element list"><a class="header__link link" href="#products">Our products</a></li>
                 <li class="header__element list"><a class="header__link link" href="#contact">Contact</a></li>
             </ul>
-            <button class="header__nav-btn" type="button">Buy now</button>
+            <button class="header__nav-btn" type="button" data-modal-open>Buy now</button>
 
         </div>
         <div>
@@ -27,9 +26,9 @@
                 made with <br>
                 <span class="header__title-span">passion</span>
             </h1>
-            <ul class="header__button-list">
-                <a class="header__btn1 btn400 link" href="#products">Products</a>
-                <a class="header__btn2 btn400 link" href="#about">How it’s made?</a>
+            <ul class="header__button-list list">
+                <li><a class="header__btn1 btn400 link" href="#products">Products</a></li>
+                <li><a class="header__btn2 btn400 link" href="#about">How it’s made?</a></li>
             </ul>
         </div>
         <div class="header__wrapper2">
@@ -51,24 +50,69 @@
             " src="./images/hero-header/Group2-dek-2x.png" alt="">
         </div>
     </div>
-    <div class="menu-container js-menu-container " id="mobile-menu">
-        <div class="menu-container__wraper1">
-            <button type="button" class="close-menu js-close-menu">
-                <svg width="14" height="14" aria-label="переключатель мобильного меню">
-                    <use class="close-icon-menu" href="./images/hero-header/symbol-defs.svg#icon-close"></use>
-                </svg></button>
-            <button class="button-menu" type="button">Buy now</button>
-        </div>
-        <div class="menu-container__wraper2">
-            <ul class="mobil-list">
-                <li class="mobil-list__element list"><a class="mobil__link link currents" href="./">Home</a></li>
-                <li class="mobil-list__element list"><a class="mobil__link link" href="#about">About us</a></li>
-                <li class="mobil-list__element list"><a class="mobil__link link" href="#about">How it’s made?</a>
-                </li>
-                <li class="mobil-list__element list"><a class="mobil__link link" href="#products">Our products</a>
-                </li>
-                <li class="mobil-list__element list"><a class="mobil__link link" href="#contact">Contact</a></li>
-            </ul>
+    <div class="drop is-hidden" data-modals>
+        <div class="mob-menu-container">
+            <div class="mob-menu-container__wraper1">
+                <button type="button" class="close-menu" data-modal-closes>
+                    <svg width="14" height="14">
+                        <use class="close-icon-menu" href="./images/hero-header/symbol-defs.svg#icon-close"></use>
+                    </svg></button>
+                <button class="button-menu" type="button">Buy now</button>
+            </div>
+            <div class="menu-container__wraper2">
+                <ul class="mobil-list">
+                    <li class="mobil-list__element list"><a class="mobil__link link currents" href="./">Home</a></li>
+                    <li class="mobil-list__element list"><a class="mobil__link link" href="#about">About us</a></li>
+                    <li class="mobil-list__element list"><a class="mobil__link link" href="#about">How it’s made?</a>
+                    </li>
+                    <li class="mobil-list__element list"><a class="mobil__link link" href="#products">Our products</a>
+                    </li>
+                    <li class="mobil-list__element list"><a class="mobil__link link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </header>
+
+<!--    Modalka -->
+<div class="drop is-hidden" data-modal>
+    <div class="header-modal ">
+        <button class="close-modal-menu" type="button" data-modal-close><svg width="25" height="25" aria-label="">
+                <use href="./images/hero-header/symbol-defs.svg#icon-closes"></use>
+            </svg></button>
+        <p class="modal-title">Order Ice Cream</p>
+        <form action="#" class="modal-form">
+            <div class="modal-field">
+                <label for="user-name" class="input-label">Name</label>
+                <span class="input-wrapper">
+                    <input type="text" name="user-name" id="user-name" class="modal-input">
+                </span>
+            </div>
+            <div class="modal-field">
+                <label for="user-tel" class="input-label">Telephone</label>
+                <span class="input-wrapper">
+                    <input type="tel" name="user-tel" id="user-tel" class="modal-input">
+                </span>
+            </div>
+            <div class="modal-field">
+                <label for="user-email" class="input-label">Email</label>
+                <span class="input-wrapper">
+                    <input type="email" name="user-email" id="user-email" class="modal-input">
+                </span>
+            </div>
+            <div class="modal-field">
+                <label for="user-text" class="input-label">Comment</label>
+                <textarea name="user-text" id="user-text" placeholder="coment" class="modal-coment"></textarea>
+            </div>
+            <div class="text">
+                <input type="checkbox" id="momdal-checkbox" class="momdal-checkbox visually-hidden">
+                <label for="momdal-checkbox" class="chec-text">
+                    I agree to the processing <span class="dogovor ">of Data</span><a href="" class="dogovor">
+                    </a></label>
+            </div>
+            <button type="submit" class="modal-button">Send</button>
+        </form>
+        <img class="modal-img" src="./images/hero-header/slider-tab-x1.png" alt="">
+    </div>
+
+</div>
