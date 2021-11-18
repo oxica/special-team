@@ -9,7 +9,25 @@
             how it’s made?
         </h2>
         <div class="cow-text-wrapper">
-    <img  class="cow-pic" srcset="./images/about/cow-mob-x1.png 280w, ./images/about/cow-mob-x2.png 280w, ./images/about/cow-tab-x1.png 340w, ./images/about/cow-tab-x2.png 340w, ./images/about/cow-dek-x1.png 516w,./images/about/cow-dek-x2.png 516w" src="./images/about/cow-mob-x1.png" sizes="(min-width:1280px)516px, (min-width:768px)340px, 280px" alt="cow-mug">
+    <picture>
+        <source
+            srcset ="./images/about/cow-dek-x1.png 1x,
+                     ./images/about/cow-dek-x2.png 2x
+            "
+            media = "(min-width:1280px)"
+            />
+            <source srcset="./images/about/cow-tab-x1.png 1x,
+                                 ./images/about/cow-tab-x2.png 2x "
+                                  media="(min-width:768px)" />
+                        <source srcset="./images/about/cow-mob-x1.png 1x,
+                                             ./images/about/cow-mob-x2.png 2x "
+                                     media="(min-width:320px)" />
+
+         <img class="cow-pic" src="./images/about/cow-mob-x1.png" alt="cow-mug">
+    </picture>
+
+   
+    </picture>
        <div class="about-txt-wrapper">
     <p class="about__txt2">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
             lorem eget, egestas eros.
