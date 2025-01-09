@@ -1,3 +1,7 @@
+
+
+![image](https://github.com/oxica/special-team/blob/main/src/images/prtsc.png)
+
 # Parcel boilerplate
 
 ## Скрытые файлы
